@@ -52,6 +52,7 @@ img {
     max-width: 1440px;
     
 }
+
 .container.header {
     flex-grow: 1;
     display: flex;
@@ -86,3 +87,37 @@ img {
     border: 1px solid gray;
 }
 
+/* responsive layout */
+
+/* md */
+
+@media (max-width: 878px) {
+
+    .container.footer {
+
+        background-color: aqua;
+        
+    }
+}
+
+/* s */
+
+@media (max-width: 639px) {
+
+    .container.footer {
+
+        background-color: rgb(42, 213, 51);
+        
+    }
+}
+
+/* xs */ 
+
+@media (max-width: 552px) {
+
+    .container.footer {
+
+        background-color: rgb(213, 42, 65);
+        
+    }
+}
