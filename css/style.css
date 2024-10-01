@@ -4,6 +4,7 @@
 	/*--brand-color: #7c69a4;*/
 	--bg-sidebar: #000000;
 	--player-gray: #383735;
+    --bg-color-:rgb(220, 213, 213);
 }
 
 /*Reset*/
@@ -19,7 +20,7 @@ html {
 }
 
 body {
-	background-color: var(--light-gray);
+	background-color: var(--bg-color-);
 }
 
 a {
@@ -49,4 +50,39 @@ img {
 .container.fluid > *{
 
     max-width: 1440px;
+    
 }
+.container.header {
+    flex-grow: 1;
+    display: flex;
+}
+
+.page__sidebar {
+    width: 225px;
+}
+
+.page__content {
+    flex-grow: 1;
+}
+
+
+.container.footer {
+
+    min-height:90px;
+}
+
+/* debug */
+
+.debug.container-fluid {
+
+    border: 1px solid;
+}
+
+.debug .container {
+    border: 2px solid violet;
+}
+
+.debug .container > * {
+    border: 1px solid gray;
+}
+
