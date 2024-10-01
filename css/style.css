@@ -1,9 +1,9 @@
 
 
 :root {
-	--brand-color: #7c69a4;
-	--brand-dark-color: #4e3969;
-	--light-gray: #f6f5f3;
+	/*--brand-color: #7c69a4;*/
+	--bg-sidebar: #000000;
+	--player-gray: #383735;
 }
 
 /*Reset*/
