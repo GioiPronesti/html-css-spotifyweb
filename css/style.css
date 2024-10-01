@@ -36,3 +36,17 @@ img {
 	max-width: 100%;
 }
 
+/*layout*/
+
+.container-fluid {
+    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container.fluid > *{
+
+    max-width: 1440px;
+}
