@@ -1,10 +1,11 @@
 
 
 :root {
-	/*--brand-color: #7c69a4;*/
+    --brand-color: #adff2f;
+	--deep-blue: #141922;
 	--bg-sidebar: #000000;
 	--player-gray: #383735;
-    --bg-color-:rgb(220, 213, 213);
+    --bg-color:rgb(220, 213, 213);
 }
 
 /*Reset*/
@@ -16,11 +17,7 @@
 }
 
 html {
-	font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-	background-color: var(--bg-color-);
+	font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -39,7 +36,12 @@ img {
 
 /*layout*/
 
-.container-fluid {
+body {
+	background-color: var(--bg-color-);
+    
+}
+
+.page-flex {
     
     height: 100vh;
     display: flex;
@@ -47,19 +49,32 @@ img {
 
 }
 
-.container.fluid > *{
+/*
+.page-flex > *{
 
     max-width: 1440px;
-    
-}
 
-.container.header {
+}
+*/
+
+.page-body {
     flex-grow: 1;
     display: flex;
 }
 
+.page__player {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--player-gray-);
+}
+
+
+
 .page__sidebar {
-    width: 225px;
+    width: 230px;
+    flex-shrink: 0;
 }
 
 .page__content {
@@ -67,24 +82,38 @@ img {
 }
 
 
-.container.footer {
+/* Component*/
 
-    min-height:90px;
+/*PLAYER*/
+
+
+
+.page__player .player__bar {
+    width: 45%;
 }
 
-/* debug */
 
-.debug.container-fluid {
+/* class debug for visual container*/
 
-    border: 1px solid;
+.debug.page-flex {
+
+    border: 2px solid rgb(227, 31, 17);
+    padding: 20px;
 }
 
-.debug .container {
-    border: 2px solid violet;
+.debug .page-body,
+.debug .page__player {
+    border: 2px solid rgb(21, 0, 255);
+    padding: 20px;
 }
 
-.debug .container > * {
-    border: 1px solid gray;
+.debug .page-body > * {
+    border: 1px solid rgb(236, 174, 18);
+    padding: 20px;
+}
+
+.debug.page__player > * {
+    border: 2px solid rgb(241, 16, 196);
 }
 
 /* responsive layout */
@@ -93,7 +122,7 @@ img {
 
 @media (max-width: 878px) {
 
-    .container.footer {
+    .player__bar  {
 
         background-color: aqua;
         
@@ -104,7 +133,7 @@ img {
 
 @media (max-width: 639px) {
 
-    .container.footer {
+    .player__bar {
 
         background-color: rgb(42, 213, 51);
         
@@ -115,9 +144,15 @@ img {
 
 @media (max-width: 552px) {
 
-    .container.footer {
+    .player__bar {
 
         background-color: rgb(213, 42, 65);
         
     }
+
+
+    .page__sidebar {
+        width: 50px;
+    }
+
 }
