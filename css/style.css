@@ -35,13 +35,13 @@ img {
 	max-width: 100%;
 }
 
-/*layout*/
-
 body {
 	background-color: var(--deep-blue);
     color:white;
     
 }
+
+/* Component*/
 
 .page-flex {
     
@@ -58,18 +58,6 @@ body {
     display: flex;
 }
 
-.page__player {
-    padding: 10px 0; 
-    /*vertival padding to get space*/  
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--player-gray);
-}
-
-
-
 .page__sidebar {
     width: 230px;
     flex-shrink: 0;
@@ -83,14 +71,52 @@ body {
 }
 
 
-/* Component*/
-
 /*PLAYER*/
 
+.page__player {
+    padding: 10px 0; 
+    /*vertival padding to get space*/  
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--player-gray);
+}
 
 /* the width is proportional of container width */
 .page__player .player__bar {
     width: 45%;
+}
+
+/*player track */
+
+.page__player .track {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	width: 230px;
+	padding: 0 10px;
+}
+
+.track__album-image {
+	width: 42px;
+	height: 42px;
+	flex-shrink: 0;
+}
+
+.track__album-image img {
+	display: block;
+	width: 100%;    
+    /* get all width and height of cantainer space*/
+	height: 100%;
+    
+    /* fit the image in order do fill thr container*/
+	object-fit: cover;
+	object-position: center;
+}
+
+.track__info {
+	flex-grow: 1;
 }
 
 

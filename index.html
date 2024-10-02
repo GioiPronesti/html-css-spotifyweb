@@ -15,7 +15,7 @@
 </head>
     <body>
     <!-- app container flex -->
-        <div class="page-flex debug">
+        <div class="page-flex ">
         <!-- body container flex -->
             <div class="page-body">
                 <header class="page__sidebar">sidebar</header>
@@ -23,9 +23,34 @@
             </div>
          <!-- player container flex -->
             <aside class="page__player ">
-                <div class="player__artist">artist</div>
+                <!-- player track flex item -->
+                <div class="track">
+
+                    <figure class="track__album-image">
+						<img src="./img/sinister.jpeg" alt="" />
+					</figure>
+
+					<div class="track__info">
+						<h3>Sinister</h3>
+						<h4>Brano Nome</h4>
+					</div>
+
+					<div>
+						<button>
+							<i class="fa-regular fa-heart"></i>
+						</button>
+						<button>
+							<i class="fa-regular fa-folder"></i>
+						</button>
+					</div>
+
+                </div>
+
+                <!-- player flex item -->
                 <div class="player__bar">play</div>
-                <div class="player__volume">volume</div>
+
+                <!-- player controls  flex item -->
+                <div class="player__controls">volume</div>
             </aside>  
         </div> 
     </body>
