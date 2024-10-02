@@ -157,6 +157,14 @@ body {
 	flex-grow: 1;
 }
 
+/* controls */
+
+.page__player .controls {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 0 10px;  /*padding orizontal*/ 
+}
 
 /* class debug for visual container*/
 
