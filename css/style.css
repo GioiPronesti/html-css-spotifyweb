@@ -35,6 +35,13 @@ img {
 	max-width: 100%;
 }
 
+button {
+	background-color: transparent;
+	border: none;
+	color: currentColor;
+	/* font-size: inherit; */
+}
+
 body {
 	background-color: var(--deep-blue);
     color:white;
@@ -88,6 +95,37 @@ body {
     width: 45%;
 }
 
+.player__controls {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+}
+
+.player__controls .controls__icon {
+	font-size: 24px;
+}
+
+.player__controls .controls__icon.icon__play {
+	font-size: 32px;
+	margin: 0 12px;
+}
+
+.player__progress {
+	display: flex;
+	gap: 20px;
+	font-size: 12px;
+	align-items: center;
+	padding: 14px 0;
+}
+
+.slider {
+	height: 4px;
+	width: 120px;
+	flex-grow: 1;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
 /*player track */
 
 .page__player .track {
@@ -109,7 +147,7 @@ body {
 	width: 100%;    
     /* get all width and height of cantainer space*/
 	height: 100%;
-    
+
     /* fit the image in order do fill thr container*/
 	object-fit: cover;
 	object-position: center;
