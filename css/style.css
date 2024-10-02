@@ -1,4 +1,5 @@
 
+/* css variables */   
 
 :root {
     --brand-color: #adff2f;
@@ -37,25 +38,20 @@ img {
 /*layout*/
 
 body {
-	background-color: var(--bg-color-);
+	background-color: var(--deep-blue);
+    color:white;
     
 }
 
 .page-flex {
     
     height: 100vh;
+    /*height relative to viewport height*/
+
     display: flex;
     flex-direction: column;
 
 }
-
-/*
-.page-flex > *{
-
-    max-width: 1440px;
-
-}
-*/
 
 .page-body {
     flex-grow: 1;
@@ -63,11 +59,13 @@ body {
 }
 
 .page__player {
-    padding: 10px 0;
+    padding: 10px 0; 
+    /*vertival padding to get space*/  
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--player-gray-);
+    background-color: var(--player-gray);
 }
 
 
@@ -75,6 +73,9 @@ body {
 .page__sidebar {
     width: 230px;
     flex-shrink: 0;
+    /* The flex-shrink property specifies how the item will shrink relative to the rest of the flexible items inside the same container. */
+
+    background-color: #000000;
 }
 
 .page__content {
@@ -87,7 +88,7 @@ body {
 /*PLAYER*/
 
 
-
+/* the width is proportional of container width */
 .page__player .player__bar {
     width: 45%;
 }
