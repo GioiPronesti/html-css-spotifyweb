@@ -13,16 +13,19 @@
 	/>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-    <div class="container-fluid debug">
-        <div class="container header">
-            <div class="page__sidebar">sidebar</div>
-            <div class="page__content">content</div>
-        </div>
-        <div class="container footer">
-            
-            container player
-        </div>
-    </div> 
-</body>
+    <body>
+        <div class="page-flex debug">
+
+            <div class="page-body">
+                <header class="page__sidebar">sidebar</header>
+                <main class="page__content">content</main>
+            </div>
+
+            <aside class="page__player ">
+                <div class="player__artist">artist</div>
+                <div class="player__bar">play</div>
+                <div class="player__volume">volume</div>
+            </aside>  
+        </div> 
+    </body>
 </html>
