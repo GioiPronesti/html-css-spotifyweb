@@ -317,5 +317,22 @@ body {
 
 	.logo-xs {
 		display: block;
-	}
+
+		/*  menu link item */
+   }
+
+	.link__item a {
+		justify-content: center;
+		}
+	
+	.link__item .item-text {
+		display: none;
+		}
+	
+	.link__item.active::before,
+	.link__item:hover::before {
+		display: none;
+		}
+	
+	
 }
