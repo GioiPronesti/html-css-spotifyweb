@@ -260,6 +260,42 @@ body {
 	padding: 8px var(--sidebar-space-x);
 }
 
+.user-details {
+	padding: 0px var(--sidebar-space-x);
+}
+
+.user-details .app-download,
+.user-details .user-profile {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 12px 0;
+	width: 100%;
+}
+
+.app-download img {
+	width: 16px;
+}
+
+.user-profile {
+	border-top: 1px solid;
+}
+
+.user-profile .user-thumbnail {
+	width: 25px;
+	aspect-ratio: 1/1;
+	background-color: #adadad;
+	border-radius: 50%;
+	overflow: hidden;  /* hide the  inside image off the father container */
+}
+
+.user-profile .user-thumbnail img {
+	display: block;
+	width: 100%;
+}
+
+
+
 /* class debug for visual container*/
 
 .debug.page-flex {
@@ -283,7 +319,7 @@ body {
     border: 2px solid rgb(241, 16, 196);
 }
 
-/* responsive layout */
+
 .debug .page__sidebar {
 	border: 2px solid rgb(227, 31, 17);
     padding: 10px 0;
@@ -295,6 +331,9 @@ body {
 	border: 2px solid rgb(21, 0, 255);
 	padding-left: 20px;
 }
+
+/* Responsive Layout Media Query*/
+
 /* md */
 
 @media (max-width: 878px) {
