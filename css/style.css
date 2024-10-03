@@ -197,10 +197,33 @@ body {
 
 /*menù sidebar*/
 
-
-.link__menu > * {
-	margin: 10px 0;
+.link__item .item-icon {
+	width: 24px;
 }
+
+.link__item a {
+	display: flex;
+	padding: 8px var(--sidebar-space-x);
+	align-items: center;
+	gap: 8px;
+}
+
+.link__item {
+	position: relative;
+}
+
+.link__item.active::before,  /*  pseudo element , before */
+.link__item:hover::before {
+	position: absolute;
+	content: '';
+	display: block;
+	height: 100%;
+	width: 3px;
+	top: 0;
+	left: 0;
+	background-color: var(--brand-color);
+}
+
 
 .playlist-title {
 	text-transform: uppercase;
