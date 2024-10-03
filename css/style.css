@@ -7,6 +7,8 @@
 	--bg-sidebar: #000000;
 	--player-gray: #383735;
     --bg-color:rgb(220, 213, 213);
+	--sidebar-space-x: 22px;   
+	/* using a css variable to change easly everywhere the padding x on the left part of sidebar */
 }
 
 /*Reset*/
@@ -63,14 +65,6 @@ body {
 .page-body {
     flex-grow: 1;
     display: flex;
-}
-
-.page__sidebar {
-    width: 230px;
-    flex-shrink: 0;
-    /* The flex-shrink property specifies how the item will shrink relative to the rest of the flexible items inside the same container. */
-
-    background-color: #000000;
 }
 
 .page__content {
@@ -167,43 +161,38 @@ body {
 }
 
 /* Sidebar */
-
-
 .page__sidebar {
+    width: 230px;
+    flex-shrink: 0;
+    /* The flex-shrink property specifies how the item will shrink relative to the rest of the flexible items inside the same container. */
 	display: flex;
 	flex-direction: column;
-
-	padding: 10px 0;
-}
-
-.page__sidebar > *{
-	padding-left: 25px;
+    background-color: #000000;
 }
 
 .link__profile {
-
 	margin-top: auto;
-
 }
 
-.link__logo{
-	display: flex;
-	align-items: center;
-	gap: 8px;
-	padding: 10px  20px;
-
+.page__sidebar .logo{
+	padding: 20px var(--sidebar-space-x);
 }
-.logo-name {
+
+.logo-lg {
+	width: 132px; /*setting the logo width*/
+}
+
+.logo-xs {
+	width: 100%; 
+	/*setting the logo small width relative of width anchor (father container) using % units */
+}
+
+.logo-lg {
 	display: block;
-	font-size: 30px;
-	font-weight: bold;
 }
 
-
-.logo-image {
-	display: block;
-	object-fit: cover;
-	object-position: center;
+.logo-xs {
+	display: none;
 }
 
 /*menù sidebar*/
