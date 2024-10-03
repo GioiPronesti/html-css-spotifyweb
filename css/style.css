@@ -361,17 +361,12 @@ body {
 @media (max-width: 552px) {
 
     .player__bar {
-
-        background-color: rgb(213, 42, 65);
-        
+        background-color: rgb(213, 42, 65);   
     }
-
 
     .page__sidebar {
         width: 50px; 
 		--sidebar-space-x: 11px;
-	    
-		
     }
 
 	.page__sidebar .logo {
@@ -385,22 +380,37 @@ body {
 
 	.logo-xs {
 		display: block;
+    }
 
-		/*  menu link item */
-   }
+ 	/* menu link item */
 
 	.link__item a {
 		justify-content: center;
-		}
+	}
 	
 	.link__item .item-text {
 		display: none;
-		}
+	}
 	
 	.link__item.active::before,
 	.link__item:hover::before {
 		display: none;
-		}
+	}
 	
+	/* user profile */
+
+	.app-download .button-text,
+	.user-profile .user-name {
+		display: none;
+	}
+
+	.user-profile {
+		border-top: none;
+	}
+
+	.user-details .app-download,
+	.user-details .user-profile {
+		justify-content: center;
+	}	
 	
 }
