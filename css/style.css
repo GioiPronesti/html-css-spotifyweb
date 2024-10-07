@@ -65,24 +65,33 @@ body {
 .page-body {
     flex-grow: 1;
     display: flex;
+	overflow: hidden; 
+	/* overflow hidden because height: 100vh  on .page-flex */
 }
+
 
 
 
 .page__content {
     flex-grow: 1;
+	overflow-y: auto;
+
+	/* father  overflow-y : scroll;  for visualize the scrollbar only on the children element .main__content; */ 
+ 
 }
+
 
 /* CONTENT */
 
 /* Section Upgrade */
 
-.section-upgrade {
+.head__content {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-}
 
+	
+}
 
 
 /*PLAYER*/
@@ -382,9 +391,11 @@ body {
     .player__bar {
 
         background-color: rgb(42, 213, 51);
-        
+	  
     }
+
 }
+
 
 /* xs */ 
 
